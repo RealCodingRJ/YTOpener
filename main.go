@@ -23,7 +23,7 @@ func GetFunctionClear(name string, char string) string {
 func GetUserReader(channelID *ChannelID) {
 
 	fmt.Println("Enter Name: ")
-	_, err := fmt.Scanln(channelID.NAME)
+	_, err := fmt.Scanln(&channelID.NAME)
 
 	time.Sleep(1 * time.Second)
 
